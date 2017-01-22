@@ -80,7 +80,7 @@ nav ul{
                                Banner1 and 2
    ========================================================================== */
 #banner1{
-    background: url('../img/banner1.png') center no-repeat;
+    background: url('../img/banner1.jpg') center no-repeat;
     width: 100%;
     background-size: cover;
     display: -webkit-flex;
@@ -95,7 +95,7 @@ nav ul{
 }
 
 #banner2{
-    background: url('../img/banner2.png') center no-repeat;
+    background: url('../img/banner2.jpg') center no-repeat;
     width: 100%;
     background-size: cover;
     display: -webkit-flex;
@@ -111,8 +111,8 @@ nav ul{
 
 #banner1 .banner-title{
     text-align: center;
-    background-color: rgba(233, 76, 69, 0.69);
-    padding: 20px;
+/*    background-color: rgba(233, 76, 69, 0.69);
+*/    padding: 20px;
     width: 100%;
     margin: 50px 0;
     color: #fff;
@@ -121,8 +121,8 @@ nav ul{
 
 #banner2 .banner-title{
     text-align: center;
-    background-color: rgba(221, 196, 161, 0.69);
-    padding: 20px;
+/*    background-color: rgba(221, 196, 161, 0.69);
+*/    padding: 20px;
     width: 100%;
     margin: 50px 0;
     color: #fff;
@@ -174,6 +174,6 @@ hr{
 }
 
 
-.m-10{
-    margin: 10px;
+.m-30{
+    padding: 30px;
 }
