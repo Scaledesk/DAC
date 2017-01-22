@@ -1,0 +1,179 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
+    color: #565a5c;
+}
+
+
+@media screen and (min-width: 769px){
+    section:not(#slider-section){
+        padding: 5% 0;
+    }
+
+}
+
+
+/* ==========================================================================
+                                Navigation
+   ========================================================================== */
+
+.top-header{
+    background-color: #e94c45;
+    border: none;
+    padding: 10px 10px 1px 2px;;
+}
+
+.custom-brand{
+    padding: 10px;
+}
+
+nav ul{
+    z-index:1000;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    transition:.5s;
+}
+.custom-nav.active{
+    opacity: 1;
+    color:#fff;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    transition:.5s;
+}
+
+.custom-nav{
+    background-color: #fff;
+    border: none;
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav>li>a{
+    font-size: 17px;
+    min-height: 65px;
+    line-height: 65px;
+    color: #e94c45;
+
+}
+
+
+
+
+/* ==========================================================================
+                                Product Display
+   ========================================================================== */
+
+
+.product-slider{
+    margin-top: 80px;
+}
+
+
+
+/* ==========================================================================
+                               Banner1 and 2
+   ========================================================================== */
+#banner1{
+    background: url('../img/banner1.png') center no-repeat;
+    width: 100%;
+    background-size: cover;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -moz-justify-content: center;
+    -moz-align-items: center;
+        padding: 10% 0!important;
+}
+
+#banner2{
+    background: url('../img/banner2.png') center no-repeat;
+    width: 100%;
+    background-size: cover;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -moz-justify-content: center;
+    -moz-align-items: center;
+    padding: 10% 0!important;
+}
+
+#banner1 .banner-title{
+    text-align: center;
+    background-color: rgba(233, 76, 69, 0.69);
+    padding: 20px;
+    width: 100%;
+    margin: 50px 0;
+    color: #fff;
+}
+
+
+#banner2 .banner-title{
+    text-align: center;
+    background-color: rgba(221, 196, 161, 0.69);
+    padding: 20px;
+    width: 100%;
+    margin: 50px 0;
+    color: #fff;
+}
+
+
+
+
+#footer-section{
+    background-color: #2f1b27;
+    color: #dcc3a0;
+}
+
+
+#footer-section .container .social-list li {
+    list-style: none;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: rgb(199, 174, 146);
+    float: right;
+    text-align: center;
+
+}
+
+.footer-links a{
+    color: #dcc3a0;
+}
+
+
+#footer-section .container .social-list li > a{
+    color: #fff;
+    font-size: 1.3em;
+
+}
+
+
+hr{
+    border-top: 2px solid #c7ae92;
+}
+
+
+.subscribe-field{
+    background: transparent;
+    border: 2px solid #c7ae92;
+}
+
+
+.m-10{
+    margin: 10px;
+}
