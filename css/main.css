@@ -349,6 +349,7 @@ figure.effect-oscar img {
     opacity: 0.9;
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s;
+    width: 100%;
 }
 
 figure.effect-oscar figcaption {
