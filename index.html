@@ -40,16 +40,17 @@
 //////////////////////////////////////////////////////////////////////////////////////////-->
 
 <div id="header-section">
-    <div class="top-header">
-        <p class="text-right">
-            <select name="" id="">
-                <option value="">Select Your Language</option>
-                <option value="">English</option>
-                <option value="">Hindi</option>
-            </select>
-        </p>
-    </div>
-    <nav class="navbar navbar-default custom-nav">
+    <nav class="navbar navbar-default custom-nav navbar-fixed-top">
+        <div class="top-header">
+            <p class="text-right">
+                <select name="" id="">
+                    <option value="">Select Your Language</option>
+                    <option value="">English</option>
+                    <option value="">Hindi</option>
+                </select>
+            </p>
+        </div>
+
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -60,7 +61,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand custom-brand" href="#">
-                    <img src="img/logo.png" alt="" width="80%">
+                    <img src="img/logo.png" alt="" width="80%" class="header-logo">
                 </a>
             </div>
 
@@ -92,8 +93,8 @@
         <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-<!--             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="3"></li> -->
+            <!--             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li> -->
 
 
             <!--<li data-target="#carousel-example-generic" data-slide-to="4"></li>-->
@@ -120,22 +121,22 @@
             </div>
 
 
-<!--             <div class="item">
-                <img src="img/GHAR-KA-KHANA.jpg" alt="..." width="100%">
-                <div class="carousel-caption JosefinSans-Regular">
+            <!--             <div class="item">
+                            <img src="img/GHAR-KA-KHANA.jpg" alt="..." width="100%">
+                            <div class="carousel-caption JosefinSans-Regular">
 
-                </div>
-            </div>
+                            </div>
+                        </div>
 
 
-            <div class="item">
-                <img src="img/TONGUE-NEW-EXPERT.jpg" alt="..." width="100%">
-                <div class="carousel-caption JosefinSans-Regular">
+                        <div class="item">
+                            <img src="img/TONGUE-NEW-EXPERT.jpg" alt="..." width="100%">
+                            <div class="carousel-caption JosefinSans-Regular">
 
-                </div>
-            </div>
+                            </div>
+                        </div>
 
- -->
+             -->
 
 
         </div>
@@ -154,7 +155,7 @@
 <section id="product-display">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 text-center">
+            <div class="col-xs-12 text-center hidden-xs">
                 <div style="height: 35px;
     border-bottom: 3px solid #e94c45;
     text-align: center;
@@ -162,15 +163,26 @@
                     <span style="background-color: #fff;
     padding: 0 15px;">
                         <h2 class="title" style="display: inline;
-    font-size: 49px; color: #e94c45">New on the menu</h2>
+    font-size: 49px; color: #e94c45; font-weight: bolder">New on the menu</h2>
                     </span>
                 </div>
             </div>
+
+
+            <!--For Mobile Devices-->
+            <div class="col-xs-12 text-center visible-xs">
+                <h2 class="title" style=" color: #e94c45; font-weight: bolder">New on the menu</h2>
+
+            </div>
+
+            <!--Ends Here-->
+
+
         </div>
 
 
         <div class="row product-slider">
-            <div class="col-xs-12">
+            <div class="col-xs-12 text-center">
                 <div class="owl-carousel owl-theme">
                     <div class="m-30"><img src="img/P1.jpg" alt="" width="200" height="266"></div>
                     <div class="m-30"><img src="img/P2.jpg" alt="" width="200" height="266"></div>
@@ -194,8 +206,9 @@
 
 <section id="banner1">
     <div class="banner-title">
-<!--         <h2>Enter into your experimental kitchen</h2>
-        <p>Because life is complicated enough </p> -->
+        <h2>Enter into your experimental kitchen</h2>
+        <p>Because life is complicated enough </p>
+        <button class="cover-btn">Explore More</button>
     </div>
 </section>
 
@@ -211,7 +224,7 @@
 <section id="product-display2">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 text-center">
+            <div class="col-xs-12 text-center hidden-xs">
                 <div style="height: 35px;
     border-bottom: 3px solid #e94c45;
     text-align: center;
@@ -223,11 +236,19 @@
                     </span>
                 </div>
             </div>
+
+            <div class="col-xs-12 text-center visible-xs">
+
+                <h2 style=" color: #e94c45; font-weight: bolder;">Chartbusters</h2>
+
+            </div>
+
+
         </div>
 
 
         <div class="row product-slider">
-            <div class="col-xs-12">
+            <div class="col-xs-12 text-center">
                 <div class="owl-carousel owl-theme">
                     <div class="m-10"><img src="img/P5.jpg" alt="" width="200" height="266"></div>
                     <div class="m-10"><img src="img/P6.jpg" alt="" width="200" height="266"></div>
@@ -251,8 +272,10 @@
 
 <section id="banner2">
     <div class="banner-title">
-<!--         <h2>The latest gossip</h2>
-        <p>Taste good food</p> -->
+        <h2>The latest gossip</h2>
+        <p>Taste good food</p>
+        <button class="cover-btn">Explore More</button>
+
     </div>
 </section>
 
@@ -262,14 +285,14 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-5 text-center">
+                <div class="col-md-6 text-center">
                     <img src="img/footer-logo.png" alt="">
                     <p>At Desi Atta Company, our primary aim is to offer convenient products to our customers while never compromising on quality. We ensure that only the finest ingredients are used in making our products so as to offer the tastiest and healthiest products to our consumers. We are firmly committed to being a
                         catalyst of positive change in the life of every family member.</p>
 
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-6">
                     <div class="text-right footer-links">
                         <p><a href="#">Products</a></p>
                         <p><a href="#">Recipies</a></p>
@@ -282,15 +305,15 @@
                 </div>
 
 
-                <div class="col-md-4 text-right">
-                    <p>S. No. 29/1+2A, Near Empire Estate,</p>
-                    <p>Pune - Mumbai Highway, Pimpri,</p>
-                    <p>Pune - 411018</p>
-                    <p>Phone +91-20-27478666, 66351700</p>
-                    <p>Phone 9422009207/ 09/ 10/ 12</p>
-                    <p>Fax +91-20-27471753</p>
-                    <p>Email seattle@asmedu.org</p>
-                </div>
+                <!--<div class="col-md-4 text-right">-->
+                <!--<p>S. No. 29/1+2A, Near Empire Estate,</p>-->
+                <!--<p>Pune - Mumbai Highway, Pimpri,</p>-->
+                <!--<p>Pune - 411018</p>-->
+                <!--<p>Phone +91-20-27478666, 66351700</p>-->
+                <!--<p>Phone 9422009207/ 09/ 10/ 12</p>-->
+                <!--<p>Fax +91-20-27471753</p>-->
+                <!--<p>Email seattle@asmedu.org</p>-->
+                <!--</div>-->
 
             </div>
 

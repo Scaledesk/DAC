@@ -9,6 +9,13 @@ body{
     font-size: 14px;
     line-height: 1.6em;
     color: #565a5c;
+    padding-top: 10.8%;
+}
+
+@font-face {
+    font-family: "Heart-of-everything";
+    src: url("../fonts/The-Heart-of-Everything-Demo.ttf");
+
 }
 
 
@@ -52,6 +59,7 @@ nav ul{
     background-color: #fff;
     border: none;
     margin-bottom: 0;
+    /*top: 42px;*/
 }
 
 .navbar-default .navbar-nav>li>a{
@@ -63,16 +71,25 @@ nav ul{
 }
 
 
+@media screen and (max-width: 600px) {
+    .header-logo{
+        width: 38%;
+    }
+}
+
+
 
 
 /* ==========================================================================
                                 Product Display
    ========================================================================== */
 
-
-.product-slider{
-    margin-top: 80px;
+@media screen and (min-width: 769px) {
+    .product-slider{
+        margin-top: 80px;
+    }
 }
+
 
 
 
@@ -80,7 +97,7 @@ nav ul{
                                Banner1 and 2
    ========================================================================== */
 #banner1{
-    background: url('../img/banner1.jpg') center no-repeat;
+    background: url('../img/GHAR-KA-KHANA-NT.jpg') center no-repeat;
     width: 100%;
     background-size: cover;
     display: -webkit-flex;
@@ -95,7 +112,7 @@ nav ul{
 }
 
 #banner2{
-    background: url('../img/banner2.jpg') center no-repeat;
+    background: url('../img/TONGUE-NEW-EXPERT-NT.jpg') center no-repeat;
     width: 100%;
     background-size: cover;
     display: -webkit-flex;
@@ -116,8 +133,17 @@ nav ul{
     width: 100%;
     margin: 50px 0;
     color: #fff;
+
 }
 
+
+#banner1 .banner-title h2{
+    font-family: "Heart-of-everything", sans-serif;
+    font-size: 57px;
+    letter-spacing: 5px;
+    color: #fff;
+    font-weight: bolder;
+}
 
 #banner2 .banner-title{
     text-align: center;
@@ -128,6 +154,28 @@ nav ul{
     color: #fff;
 }
 
+#banner2 .banner-title h2{
+    font-family: "Heart-of-everything", sans-serif;
+    font-size: 57px;
+    letter-spacing: 3px;
+    color: #2f1b27;
+    font-weight: bolder;
+}
+
+#banner2 .banner-title > p{
+    color: #2f1b27;
+
+}
+
+
+
+
+.cover-btn{
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
 
 
 
