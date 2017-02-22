@@ -389,6 +389,7 @@ figure.effect-oscar img {
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s;
     width: 100%;
+    height: 230px;
 }
 
 figure.effect-oscar figcaption {
@@ -396,6 +397,7 @@ figure.effect-oscar figcaption {
     /*background-color: rgba(58,52,42,0.7);*/
     -webkit-transition: background-color 0.35s;
     transition: background-color 0.35s;
+    font-size: 1.9vh;
 }
 
 figure.effect-oscar figcaption::before {
@@ -489,4 +491,12 @@ figure.effect-oscar:hover img {
 
 .slick-arrow[style]{
  display: none!important;
+}
+
+
+@media screen only and (min-width:1440px){
+    figure.effect-oscar figcaption {
+   
+    font-size: 1.3vh;
+}
 }
