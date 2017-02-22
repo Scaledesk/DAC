@@ -39,7 +39,14 @@ body{
 
 .custom-brand{
     padding: 10px;
+    text-align: -webkit-center;
 }
+
+
+.nav{
+    padding-left: 10px;
+}
+
 
 nav ul{
     z-index:1000;
@@ -193,7 +200,7 @@ nav ul{
     height: 35px;
     border-bottom: 3px solid #e94c45;
     text-align: center;
-    
+
 }
 
 .sec-title span {
@@ -203,8 +210,8 @@ nav ul{
 
 .sec-title h2{
     display: inline;
-    font-size: 49px; 
-    color: #e94c45; 
+    font-size: 49px;
+    color: #e94c45;
 }
 
 
@@ -444,22 +451,32 @@ figure.effect-oscar:hover img {
         margin: 10px auto;
         width: 100%;
     }
-    
+
     .sec-title div{
         margin-top: 20px;
     height: 45px;
     border-bottom: 3px solid #e94c45;
     text-align: center;
-    
+
 }
 
 .sec-title h2{
     display: inline;
-    font-size: 30px; 
-    color: #e94c45; 
+    font-size: 30px;
+    color: #e94c45;
 }
-    
+
     #banner1{
         height: 70vh;
     }
+}
+
+
+.p-10{
+    padding: 10px!important;
+}
+
+
+.slick-arrow[style]{
+ display: none!important;
 }
