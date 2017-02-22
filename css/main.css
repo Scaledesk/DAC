@@ -23,6 +23,15 @@ body{
     section:not(#slider-section){
         padding: 5% 0;
     }
+    
+  
+}
+
+@media screen and (max-width: 767px){
+  
+    #slider-section{
+   margin-top: 50px; 
+}
 
 }
 
@@ -83,6 +92,7 @@ nav ul{
         width: 38%;
     }
 }
+
 
 
 
