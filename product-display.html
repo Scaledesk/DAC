@@ -41,10 +41,13 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    
 
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    
+    <link rel="stylesheet" href="css/main.css">
+   
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -140,12 +143,88 @@
 <!--///////////////////////////////////////////////////////////////////////////////////////////
                                  Product Display1
 //////////////////////////////////////////////////////////////////////////////////////////-->
+<section>
+
+<div class="container">
 
 
+ <div class="row filter-bar">
+            <!-- A basic setup of simple mode filter controls, all you have to do is use data-filter="all"
+            for an unfiltered gallery and then the values of your categories to filter between them -->
+     <div class="col-md-7 "> 
+               
+            <ul class="simplefilter">
+              <span>  View our Range of Products </span>
+                <li class="active" data-filter="all">All</li>
+                <li data-filter="1">What's New</li>
+                <li data-filter="2">Best Seller</li>
+               
+            </ul>
+            
+    </div>
+            
+     <div class="col-md-4 search-row pull-right">
+            Search control:
+            <input type="text" class="filtr-search" name="filtr-search" data-search>
+     </div>
+        
+</div>
+        
+        
+        
+        
+         <div class="row">
+            <!-- This is the set up of a basic gallery, your items must have the categories they belong to in a data-category
+            attribute, which starts from the value 1 and goes up from there -->
+            <div class="filtr-container">
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="Busy streets">
+                    <img class="img-responsive" src="img/products/ATTA/BAJRA%20ATTA.png" alt="sample image">
+                    <span class="item-desc">Bajra Atta</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" data-sort="Luminous night">
+                    <img class="img-responsive" src="img/products/ATTA/CHANA%20SATTU%20ATTA.png" alt="sample image">
+                    <span class="item-desc"> Channa Sattu Atta</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="City wonders">
+                    <img class="img-responsive" src="img/products/ATTA/COARSE%20BESAN.png" alt="sample image">
+                    <span class="item-desc"> Coarse Besan</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" data-sort="In production">
+                    <img class="img-responsive" src="img/products/ATTA/FINE%20BESAN.png" alt="sample image">
+                    <span class="item-desc">Fine Besan </span>
+                </div>
+                
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="Industrial site">
+                    <img class="img-responsive" src="img/products/ATTA/JOWAR%20ATTA.png" alt="sample image">
+                    <span class="item-desc"> Jowar Atta</span>
+                </div>
+                
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" data-sort="Peaceful lake">
+                    <img class="img-responsive" src="img/products/ATTA/KUTTU%20ATTA.png" alt="sample image">
+                    <span class="item-desc"> Kuttu Atta</span>
+                </div>
+                
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="City lights">
+                    <img class="img-responsive" src="img/products/ATTA/MAKAI%20ATTA.png" alt="sample image">
+                    <span class="item-desc"> Makai Atta</span>
+                </div>
+                
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" data-sort="Dreamhouse">
+                    <img class="img-responsive" src="img/products/ATTA/MODAK%20ATTA.png" alt="sample image">
+                    <span class="item-desc">Modak Atta</span>
+                </div>
+                
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" data-sort="Restless machines">
+                    <img class="img-responsive" src="img/products/ATTA/MOONG%20DAL%20ATTA.png" alt="sample image">
+                    <span class="item-desc"> Moong Dal Atta</span>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+    
 
-
-
-
+    </section>
 
 
 
@@ -226,9 +305,50 @@
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
+<!-- <script src="js/vendor/isotope.min.js"></script>-->
+
+<!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>-->
+ <script src="js/jquery.filterizr.js"></script>
+ 
+ 
+    
+  
+
 
 
 <script src="js/main.js"></script>
+
+    <script>
+   
+        $(function() {
+            //Initialize filterizr with default options
+            $('.filtr-container').filterizr();
+        });
+        
+        $(function() {
+    //Simple filter controls
+    $('.simplefilter li').click(function() {
+        $('.simplefilter li').removeClass('active');
+        $(this).addClass('active');
+    });
+    //Multifilter controls
+    $('.multifilter li').click(function() {
+        $(this).toggleClass('active');
+    });
+    //Shuffle control
+    $('.shuffle-btn').click(function() {
+        $('.sort-btn').removeClass('active');
+    });
+    //Sort controls
+    $('.sort-btn').click(function() {
+        $('.sort-btn').removeClass('active');
+        $(this).addClass('active');
+    });
+});
+        
+    </script>
+
+ 
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
