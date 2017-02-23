@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Desi Atta</title>
+    <title>Desi Atta </title>
     <meta name="description" content="">
 
     <meta name="keywords" content="">
@@ -115,11 +115,11 @@
 //////////////////////////////////////////////////////////////////////////////////////////-->
 
 
-<section id="slider-section">
+<section id="slider-section" class="container">
     <div class="slider">
-        <div><img src="img/home-banner/Homepage-banner-2.jpg" alt="" width="100%"></div>
+        <div><img src="img/banners/ATTA.jpg" alt="" width="100%"></div>
         <!--<div><img src="img/SLIDER2.jpg" alt="" width="100%"></div>-->
-        <div><img src="img/home-banner/Homepage-banner2-2.jpg" alt="" width="100%"></div>
+<!--        <div><img src="img/home-banner/Homepage-banner2-2.jpg" alt="" width="100%"></div>-->
 
     </div>
 
@@ -143,18 +143,18 @@
 <!--///////////////////////////////////////////////////////////////////////////////////////////
                                  Product Display1
 //////////////////////////////////////////////////////////////////////////////////////////-->
-<section>
+<section class="p-t-5">
 
-<div class="container">
+<div class="container" id="fb">
 
 
- <div class="row filter-bar">
+ <div class="row filter-bar" >
             <!-- A basic setup of simple mode filter controls, all you have to do is use data-filter="all"
             for an unfiltered gallery and then the values of your categories to filter between them -->
      <div class="col-md-7 "> 
                
             <ul class="simplefilter">
-              <span>  View our Range of Products </span>
+              <span>  View our wide range of Varities of ATTA </span>
                 <li class="active" data-filter="all">All</li>
                 <li data-filter="1">What's New</li>
                 <li data-filter="2">Best Seller</li>
@@ -164,8 +164,9 @@
     </div>
             
      <div class="col-md-4 search-row pull-right">
-            Search control:
-            <input type="text" class="filtr-search" name="filtr-search" data-search>
+          <span class="pull-right">   
+            <input type="text" class="filtr-search" placeholder="Search here..." name="filtr-search" data-search>
+            </span>
      </div>
         
 </div>
@@ -339,6 +340,15 @@
         $(this).addClass('active');
     });
 });
+       
+       
+        $("div#fb").click(function(){
+//            alert(123);
+             event.preventDefault();
+//        $('html,body').animate({scrollTop:0}, 'slow') ;
+        $('html,body').animate({scrollTop:$('#fb').offset().top - 140}, 'slow') ;
+            return false;
+    });
        
    });
        
