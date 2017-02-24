@@ -190,7 +190,7 @@ nav ul{
     color: #2f1b27;
     background-color: transparent;
     border: 2px solid #2f1b27;
-    padding: 10px 30px;
+    padding: 8px 30px;
     text-transform: uppercase;
 
 }
@@ -201,8 +201,9 @@ nav ul{
     border: 2px solid #fff;
     padding: 10px 30px;
     text-transform: uppercase;
-    margin: 20px 10px;
+    margin: 10px 10px;
     color: #fff;
+    display: inline-block;
     transition: all 0.3s;
     
 }
@@ -508,8 +509,9 @@ figure.effect-oscar:hover img {
 
 /*FilterZ Isotope filter styling*/
   .item-desc {
-    background-color: rgba(0,0,0,0.5);
-    color: white;
+/*    background-color: rgba(0,0,0,0.5);*/
+    background-color: #fff;
+    color: #333;
     position: absolute;
     text-transform: uppercase;
     text-align: center;
@@ -572,6 +574,8 @@ select {
 .filter-bar{
     padding: 10px 10px 0px 0px;
     background: rgba(233, 76, 69, 0.26);
+    margin-left: 0px;
+    margin-right: 0px;
     
 }
 
@@ -582,6 +586,78 @@ select {
 .simplefilter span{
     padding-right: 10px;
 }
+
+.filtr-item img{
+    margin-bottom: 50px;
+}
+
+.filtr-item{
+    margin-top: 10px;
+    border: 2px solid #f9f9f9;
+    cursor: pointer;
+}
+
+.caption h3{
+    font-size: 2.5vh;
+}
+
+.pc-hover{
+
+    position: absolute;
+/*    background: rgba(0,0,0,0.75);*/
+/*    background:  rgba(233, 76, 69, 0.8);*/
+   background:  rgba(181, 68, 42, 0.65);
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+     text-align: center;
+    
+    color: #f9f9f9;
+    padding: 30px 5%;
+    font-size: 2.5vh;
+opacity: 0;
+    
+/*    visibility: hidden;*/
+    transition: opacity 0.2s ease-in;
+   
+}
+
+.filtr-item:hover .pc-hover{
+    opacity: 0.9;
+/*    visibility: visible;*/
+   
+}
+
+@media screen and (max-width:767px){
+    .simplefilter {
+       padding: 0px;
+        text-align: center;
+    }
+    
+    .simplefilter li{
+        padding: 6px 15px !important;
+        font-size: 2vh;
+    
+    }
+    
+    .simplefilter span{
+        display: none;
+    }
+    
+    .filter-bar .col-md-7{
+        padding-right: 0px;
+    }
+    
+    .slick-initialized .slick-slide{
+        margin-top: 30px;
+    }
+    
+    .item-desc{
+        font-size: 2.1vh;
+    }
+}
+
 
 @media screen only and (min-width:1440px){
     figure.effect-oscar figcaption {
