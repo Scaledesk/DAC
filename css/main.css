@@ -629,6 +629,34 @@ opacity: 0;
    
 }
 
+.product-main .row{
+    height: 60vh;
+
+}
+
+.product-main .sec-box{
+    height: 100%;
+    padding: 0px 7% 5% 10%;
+    font-size: 2.6vh;
+    text-align: left;
+
+}
+
+.sec-box img{
+    width: 100%;
+    height: 100%;
+}
+
+.sec-box:first-child{
+    padding: 0px;
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+.sec-box h3{
+    margin-bottom: 18px;
+}
+
 @media screen and (max-width:767px){
     .simplefilter {
        padding: 0px;
