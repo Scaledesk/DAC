@@ -403,7 +403,7 @@ figure.effect-oscar img {
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s;
     width: 100%;
-    height: 230px;
+    /*height: 230px;*/
 }
 
 figure.effect-oscar figcaption {
