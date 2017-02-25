@@ -636,9 +636,19 @@ opacity: 0;
 
 .product-main .sec-box{
     height: 100%;
-    padding: 0px 7% 5% 10%;
+    padding: 12px 7% 5% 10%;
     font-size: 2.6vh;
     text-align: left;
+
+}
+
+.sec-box p{
+    font-size: 2.5vh;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+    font-family: Open Sans;
+    text-align: justify;
 
 }
 
@@ -656,6 +666,7 @@ opacity: 0;
 
 .label-row .lab{
     padding-right: 0px;
+    padding-bottom: 10px;
 }
 
 .label-row .info{
