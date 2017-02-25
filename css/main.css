@@ -186,9 +186,21 @@ nav ul{
 }
 
 
-#banner2 .banner-title > .cover-btn{
+.cover-btn-dark{
     color: #2f1b27;
     background-color: transparent;
+    border: 2px solid #2f1b27;
+    padding: 8px 30px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    transition: all 0.2s;
+
+}
+
+.cover-btn-dark:hover, .cover-btn-dark:focus{
+    color: #fff;
+    
+    background-color: #2f1b27;
     border: 2px solid #2f1b27;
     padding: 8px 30px;
     text-transform: uppercase;
@@ -598,7 +610,7 @@ select {
 }
 
 .caption h3{
-    font-size: 2.5vh;
+    font-size: 2.4vh;
 }
 
 .pc-hover{
@@ -675,7 +687,7 @@ opacity: 0;
 }
 
 .sec-box img{
-    width: 100%;
+/*    width: 80%;*/
     height: 100%;
 }
 
@@ -690,6 +702,12 @@ opacity: 0;
 }
 
 @media screen and (max-width:767px){
+    .label-row .info{ 
+    padding-left: 8px;
+    margin-left: auto;
+                
+    }
+    
     .simplefilter {
        padding: 0px;
         text-align: center;
