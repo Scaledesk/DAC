@@ -642,6 +642,27 @@ opacity: 0;
 
 }
 
+.product-main .row .label-row{
+    height: auto;
+}
+
+.label-row span{
+        font-size: 2vh;
+}
+
+.label-row span.labl{
+        font-size: 1.8vh;
+}
+
+.label-row .lab{
+    padding-right: 0px;
+}
+
+.label-row .info{
+    padding-left: 0px;
+    margin-left: -15px;
+}
+
 .sec-box img{
     width: 100%;
     height: 100%;
