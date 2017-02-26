@@ -9,7 +9,7 @@ body{
     font-size: 14px;
     line-height: 1.6em;
     color: #565a5c;
-    padding-top: 9.8%;
+    padding-top: 6.5%;
 }
 
 @font-face {
@@ -30,7 +30,7 @@ body{
 @media screen and (max-width: 767px){
   
     #slider-section{
-   margin-top: 50px; 
+   margin-top: 25px; 
 }
 
 }
@@ -43,7 +43,8 @@ body{
 .top-header{
     background-color: #e94c45;
     border: none;
-    padding: 10px 10px 1px 2px;;
+    padding: 10px 10px 1px 2px;
+    display: none;
 }
 
 .custom-brand{
@@ -699,6 +700,10 @@ opacity: 0;
 
 .sec-box h3{
     margin-bottom: 18px;
+}
+
+.btn-store-loc{
+    margin-top: 15px;
 }
 
 @media screen and (max-width:767px){
