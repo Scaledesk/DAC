@@ -86,7 +86,15 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Our Products</a></li>
+                    <li class="dropdown-toggle" id="menu1" data-toggle="dropdown"><a href="#">Our Products<span class="caret"></span></a></li>
+                   
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+    </ul>
                     <li><a href="#">Food Experiments</a></li>
                     <li><a href="#">Kitchen Stories</a></li>
                     <li class="text-center">
@@ -568,6 +576,7 @@
             autoplay: true
 
         });
+    
     });
 
 
