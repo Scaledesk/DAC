@@ -406,7 +406,8 @@ hr{
 
 .grid figure p {
     letter-spacing: 1px;
-    font-size: 68.5%;
+    font-size: 1.8vh;
+    text-transform: capitalize;
 }
 
 .grid{
@@ -491,7 +492,13 @@ figure.effect-oscar:hover img {
 }
 
 .caption{
-    margin-top: 50%;
+/*    margin-top: 50%;*/
+    margin-top: 25%;
+}
+
+.effect-oscar .cover-btn{
+    border:1px solid #f9f9f9;
+    padding: 6px 10px;
 }
 
 @media screen and (max-width: 50em) {
