@@ -409,7 +409,16 @@ hr{
     font-size: 1.8vh;
     text-transform: capitalize;
 }
+.wrap{
+overflow: auto;
+  /*  height:2050px;*/
+    position:relative;
+}
 
+.filter-bar{
+    z-index: 2;
+    transition: all 0.3s ease;
+}
 .grid{
     margin: 10px;
 }
@@ -608,7 +617,11 @@ select {
 
 .filter-bar{
     padding: 10px 10px 0px 0px;
-    background: rgba(233, 76, 69, 0.26);
+    /*background: rgba(233, 76, 69, 0.26);*/
+    background:rgb(246, 143, 138);
+    height: 62px;
+  /*  width: 100%;*/
+    max-width: 100%;
     margin-left: 0px;
     margin-right: 0px;
     
@@ -738,6 +751,20 @@ opacity: 0;
 
 .rec-pro .product-slider{
     margin-top: 25px;
+}
+
+
+.addfilterclass{
+    position: fixed;
+    top: 95px;
+background-color:#f68f8a;
+    width:168vh;
+}
+
+.removefilterclass{
+    position: static;
+    top: 0px;
+    width:168vh;
 }
 
 @media screen and (max-width:767px){
