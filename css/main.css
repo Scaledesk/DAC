@@ -893,3 +893,13 @@ background-color:#f68f8a;
 #contact-us-section .contact-banner h1 {
     color: #fff;
 }
+
+
+.border-bottom{
+    border-bottom: 1px solid #eee;
+}
+
+
+.p-10{
+    padding: 10px!important;
+}
