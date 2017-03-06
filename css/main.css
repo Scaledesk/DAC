@@ -676,7 +676,7 @@ opacity: 0;
 
 }
 
-.product-main .row{
+.product-main > .row{
     height: 60vh;
 
 }
@@ -870,7 +870,7 @@ background-color:#f68f8a;
 }
 
 #contact-us-section .contact-banner{
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('https://images.unsplash.com/photo-1461950209984-1ce1f03a1be9?dpr=1&auto=format&fit=crop&w=1500&h=1499&q=80&cs=tinysrgb&crop=');
+    background: url('../img/banners/About-Banner_with%20text.jpg') center no-repeat;
     background-size: cover;
     display: -webkit-flex;
     display: -moz-flex;
@@ -902,4 +902,8 @@ background-color:#f68f8a;
 
 .p-10{
     padding: 10px!important;
+}
+
+.p-0{
+    padding: 0!important;
 }
