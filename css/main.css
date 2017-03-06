@@ -21,7 +21,7 @@ body{
 
 @media screen and (min-width: 769px){
     section:not(#slider-section){
-        padding: 5% 0;
+        padding: 3% 0;
     }
 
 
@@ -870,7 +870,7 @@ background-color:#f68f8a;
 }
 
 #contact-us-section .contact-banner{
-    background: url('../img/banners/About-Banner_with%20text.jpg') center no-repeat;
+    background: url('../img/CONTACT-US.jpg') center no-repeat;
     background-size: cover;
     display: -webkit-flex;
     display: -moz-flex;
@@ -880,24 +880,48 @@ background-color:#f68f8a;
     -webkit-align-items: center;
     -moz-justify-content: center;
     -moz-align-items: center;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 400px;
-        margin-bottom: 50px;
-
+                height: 400px;
 }
+
+
 
 #contact-us-section .contact-banner:before{
 }
+
 
 #contact-us-section .contact-banner h1 {
     color: #fff;
 }
 
-
-.border-bottom{
-    border-bottom: 1px solid #eee;
+#contact-us-section .row h3{
+    margin: 20px 0;
 }
+
+
+#contact-us-section .row .form-group input {
+    height: 50px;
+    box-shadow: none;
+}
+
+.contact-bg{
+    background-color: #f2f2f3;
+    padding: 20px;
+}
+
+
+#contact-us-section .contact-btn{
+    background-color: #fff;
+    color: #e94c45;
+    border: 2px solid #e94c45;
+    height: 50px;
+    width: 160px;
+    font-size: 18px;
+}
+
+
+/*----------------------------------
+        Helper Classes
+-----------------------------------*/
 
 
 .p-10{
@@ -906,4 +930,50 @@ background-color:#f68f8a;
 
 .p-0{
     padding: 0!important;
+}
+
+.p-t-20{
+    padding-top: 20px !important;
+}
+
+.border-right{
+    border-right: 1px solid #eee;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #eee;
+}
+
+
+
+/*----------------------------------
+        Recipe Description
+-----------------------------------*/
+
+#recipe-description ul li{
+    line-height: 50px;
+    border-bottom: 1px solid #eee;
+    list-style: square;
+
+}
+
+#recipe-description  p{
+    padding: 10px;
+
+}
+
+#recipes ul{
+    padding: 0;
+}
+
+#recipes ul li{
+    list-style: none;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin: 0 10px auto;
+}
+
+#recipes ul li figure figcaption{
+    text-align: center;
 }
