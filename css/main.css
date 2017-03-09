@@ -23,12 +23,14 @@ body{
     section:not(#slider-section){
         padding: 3% 0;
     }
-
+    
+  
 
 }
 
 @media screen and (max-width: 767px){
-
+    
+    
     #slider-section{
    margin-top: 25px;
 }
@@ -920,6 +922,8 @@ background-color:#f68f8a;
 }
 
 
+
+
 /*----------------------------------
         Helper Classes
 -----------------------------------*/
@@ -980,6 +984,39 @@ background-color:#f68f8a;
 }
 
 
+/*Contact Us Right Side Box*/
+
+.contact-bg .contact-info {
+   background: #dbc39d;
+    outline: 2px solid #ebebeb;
+    outline-offset: -10px;
+    font-size: 2.3vh;
+    line-height: 1.5;
+    padding: 10% 2%;
+    margin-top: 2%;
+
+}
+
+.contact-bg .contact-info i{
+    color : #523633;
+}
+
+.contact-bg .contact-info p a {
+    font-size: 2.2vh;
+    font-weight: 300;
+    text-decoration: none;
+    color: #e28272;
+}
+
+
+@media screen and (max-width:767px){
+      .contact-bg .contact-info {
+        font-size: 2vh;
+        padding: 10% 12%;
+    }
+
+
+}
 
 /*//////////////////////////////////////////////////Filter//////////////////////////////////////////////////////////*/
 
