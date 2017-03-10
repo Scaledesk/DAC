@@ -1021,7 +1021,18 @@ background-color:#f68f8a;
 
 /*//////////////////////////////////////////////////Filter//////////////////////////////////////////////////////////*/
 
+/*T&C Page*/
 
+.tnc-heading-bg{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #e94c45;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 2.4vh;
+    margin-bottom: 10px;
+    margin-top: 12px;
+}
 
 /* --------------------------------
 
