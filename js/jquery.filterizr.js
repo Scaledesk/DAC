@@ -693,7 +693,7 @@
                 containerHeight = rows * array[0].outerHeight();
             }
             //Update the height of .filtr-container based on new positions
-            self.css('height', containerHeight);
+            self.css('height', containerHeight+90);
             return posArray;
         },
 

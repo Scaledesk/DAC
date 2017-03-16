@@ -629,7 +629,9 @@ select {
     right: 4.5%;
     width: 100%;
 }
-
+.filtr-container {
+    padding-top: 80px !important;
+}
 .simplefilter{
     padding-left: 10px;
 }
