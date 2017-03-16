@@ -623,9 +623,11 @@ select {
     background:rgb(246, 143, 138);
     height: 62px;
     max-width: 100%;
-    min-width: 100%;
     margin-left: 0;
     margin-right: 0;
+    left: 4.5%;
+    right: 4.5%;
+    width: 100%;
 }
 
 .simplefilter{

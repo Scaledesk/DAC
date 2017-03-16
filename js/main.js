@@ -20,7 +20,7 @@ $(document).ready(function() {
 //this will calculate header's full height, with borders, margins, paddings
         var scrollVal = $(this).scrollTop();
         if ( scrollVal > headerH ) {
-            $('#fb').css({'position':'fixed','top' :'95px','background-color':'#f68f8a','width':'50%'});
+            $('#fb').css({'position':'fixed','top' :'95px','background-color':'#f68f8a','width':'92%'});
         } else {
             $('#fb').css({'position':'static','top':'0px','width':'50%'});
         }
