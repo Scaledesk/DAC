@@ -715,6 +715,11 @@ opacity: 0;
     letter-spacing: 0.1px;
 }
 
+.about-us-img{
+    padding: 35px;
+    margin-top: 15px;
+}
+
 .product-main .row .label-row{
     height: auto;
 }
@@ -978,14 +983,16 @@ background-color:#f68f8a;
 
 #recipes ul li{
     list-style: none;
-    width: 150px;
+    width: 260px;
     height: 150px;
     display: inline-block;
     margin: 0 10px auto;
+
 }
 
 #recipes ul li figure figcaption{
     text-align: center;
+    color: #333;
 }
 
 
