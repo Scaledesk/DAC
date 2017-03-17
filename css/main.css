@@ -32,7 +32,7 @@ body{
     
     
     #slider-section{
-   margin-top: 25px;
+ /*  margin-top: 25px;*/
 }
 
 }
@@ -90,9 +90,19 @@ nav ul{
 }
 
 
+
+
 @media screen and (max-width: 600px) {
     .header-logo{
         width: 38%;
+    }
+
+    .navbar-default .navbar-nav>li>a{
+        font-size: 17px;
+        min-height: 52px;
+        line-height: 32px;
+        color: #e94c45;
+
     }
 }
 
