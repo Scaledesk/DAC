@@ -778,6 +778,9 @@ background-color:#f68f8a;
     top: 0px;
     width:168vh;
 }
+.pc-hover h4 {
+    text-decoration: underline;
+}
 
 @media screen and (max-width:767px){
     .label-row .info{
