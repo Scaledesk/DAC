@@ -1036,6 +1036,28 @@ background-color:#f68f8a;
 }
 
 
+/*Privacy Policy */
+
+#pp-section {
+    padding: 0px !important;
+}
+
+#pp-section .pp-banner{
+    
+     background: url('../img/banners/PRIVACY-POLICY.jpg') center no-repeat;
+    background-size: cover;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -moz-justify-content: center;
+    -moz-align-items: center;
+                height: 400px;
+    
+}
+
 @media screen and (max-width:767px){
       .contact-bg .contact-info {
         font-size: 2vh;
