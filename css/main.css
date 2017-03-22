@@ -299,12 +299,14 @@ nav ul{
 
 .footer-links a{
     color: #dcc3a0;
+    
 }
 
 
 #footer-section .container .social-list li > a{
     color: #fff;
     font-size: 1.3em;
+    padding: 10px;
 
 }
 
