@@ -12,7 +12,7 @@ $message=$_POST['message'];
  // fname sname email phone message
 
   // $emailadmin="care@futureconsumer.in";
-$emailadmin="sanchit2411@gmail.com";
+$emailadmin="1gauravlakhani@gmail.com";
   
 $subject = "Contact Us - DAC";
 
@@ -20,7 +20,7 @@ $subject = "Contact Us - DAC";
 
 $message ='<html>
 <body>
-<div id="abcd" style="text-align:justify;font-size:18px;"> First Name:-'.$fname.'Last Name:-'.$sname.'<br>Phone:-'.$phone.'<br>Email:-'.$email.'<br>Address :-'.$message. '</div>
+<div id="abcd" style="text-align:justify;font-size:18px;"> First Name:-'.$fname.'<br>Last Name:-'.$sname.'<br>Phone:-'.$phone.'<br>Email:-'.$email.'<br>Address :-'.$message. '</div>
 </body>
 </html>';
 
