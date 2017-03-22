@@ -134,7 +134,7 @@
 
         <div class="row contact-bg">
             <div class="col-md-6">
-                <form action="">
+                <form action="PHPMailer/MailFunction.php" method="post">
                     <h3>Contact us</h3>
 
                     <div class="row">
@@ -142,14 +142,14 @@
                         <div class="col-md-6">
                             <div class="form-group">
 <!--                                <label for="First name">First Name</label>-->
-                                <input type="text" class="form-control" required placeholder="First Name" />
+                                <input type="text" class="form-control" name="fname" required placeholder="First Name" />
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="form-group">
 <!--                                <label for="Last name">Last Name</label>-->
-                                <input type="text" class="form-control" placeholder="Last Name" />
+                                <input type="text" class="form-control" required name="sname" placeholder="Last Name" />
                             </div>
                         </div>
 
@@ -160,7 +160,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
 <!--                                <label for="Email">Email</label>-->
-                                <input type="email" class="form-control" required placeholder="Email" />
+                                <input type="email" class="form-control" name="email" required placeholder="Email" />
                             </div>
                         </div>
 
@@ -170,9 +170,9 @@
                     <div class="row">
 
                         <div class="col-md-12">
-                            <div class="form-group">
+                            <div class="form-group"> 
 <!--                                <label for="Phone Number">Phone Number</label>-->
-                                <input type="Number" required class="form-control" placeholder="Phone Number" />
+                                <input type="Number" required name="phone" class="form-control" placeholder="Phone Number" />
                             </div>
                         </div>
 
@@ -185,7 +185,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
 <!--                                <label for="message">Message</label>-->
-                                <textarea  cols="10" rows="3" class="form-control" placeholder="Write Your Message"></textarea>
+                                <textarea  cols="10" rows="3" name="message" class="form-control" placeholder="Write Your Message"></textarea>
                             </div>
                         </div>
 
@@ -195,10 +195,15 @@
 
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <button class="contact-btn">Submit</button>
-                        </div>
-                    </div>
+                            <button class="contact-btn" type="submit">Submit</button>
+                       
+                        <?php 
+                         
+                        echo $_REQUEST['msg']; 
 
+                        ?>
+                    </div> 
+                    </div>
 
 
                 </form>
@@ -506,7 +511,7 @@
 
 <!--
 <script>
-    $(document).ready(function(){
+    $(document).ready(function(){F
         $(".owl-carousel").owlCarousel();
     });
 
