@@ -46,7 +46,7 @@ $mail->addAddress($emailadmin);     // Add a recipient
 $mail->Subject = $subject;
 $mail->Body    = $message;
 
-  
+ $mail->SMTPDebug = 1; 
 
 
 
@@ -60,8 +60,8 @@ if($mail->send())
 
 } else {
    
-   
+   echo  $mail1->ErrorInfo;
       // echo "";
-      header("location: ../contact.php?msg='<p class='error'>Some error occurred!</p>'");
+     // header("location: ../contact.php?msg='<p class='error'>Some error occurred!</p>'");
 
       }
