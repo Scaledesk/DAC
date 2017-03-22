@@ -29,8 +29,8 @@ $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'desiattacompany@gmail.com';                 // SMTP username
 $mail->Password = 'kreativstreet';                       // SMTP password
-//$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 587;// TCP port to connect to
+$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 465;// TCP port to connect to
 $mail->IsHTML(true);
 $mail->setFrom('desiattacompany@gmail.com', 'DAC');
 //$mail->addAddress('ellen@example.com');               // Name is optional
