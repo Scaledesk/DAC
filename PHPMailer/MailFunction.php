@@ -11,7 +11,8 @@ $message=$_POST['message'];
 
  // fname sname email phone message
 
-  $emailadmin="care@futureconsumer.in";
+  // $emailadmin="care@futureconsumer.in";
+$emailadmin="sanchit2411@gmail.com";
   
 $subject = "Contact Us - DAC";
 
