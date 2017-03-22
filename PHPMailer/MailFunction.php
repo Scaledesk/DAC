@@ -11,7 +11,7 @@ $message=$_POST['message'];
 
  // fname sname email phone message
 
-  $emailadmin="nkscoder@gmail.com";
+  $emailadmin="care@futureconsumer.in";
   
 $subject = "Contact Us - DAC";
 
@@ -25,16 +25,16 @@ $message ='<html>
 
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'sub5.mail.dreamhost.com';  // Specify main and backup SMTP servers
+$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'hello@interiopro.com';                 // SMTP username
-$mail->Password = 'qazplmq1w2e3r4';                       // SMTP password
+$mail->Username = 'desiattacompany@gmail.com';                 // SMTP username
+$mail->Password = 'kreativstreet';                       // SMTP password
 //$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;// TCP port to connect to
 $mail->IsHTML(true);
-$mail->setFrom('hello@interiopro.com', 'Interio Pro');
+$mail->setFrom('desiattacompany@gmail.com', 'DAC');
 //$mail->addAddress('ellen@example.com');               // Name is optional
-$mail->addReplyTo('hello@interiopro.com', 'noreply');
+$mail->addReplyTo('desiattacompany@gmail.com', 'noreply');
 
 
 // $mail->addAddress($email, $name);     // Add a recipient
