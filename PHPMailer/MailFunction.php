@@ -12,7 +12,7 @@ $message=$_POST['message'];
  // fname sname email phone message
 
   // $emailadmin="care@futureconsumer.in";
-$emailadmin="1gauravlakhani@gmail.com";
+$emailadmin="sanchit2411@gmail.com";
   
 $subject = "Contact Us - DAC";
 
@@ -26,16 +26,16 @@ $message ='<html>
 
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+$mail->Host = 'sub5.mail.dreamhost.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'desiattacompany@gmail.com';                 // SMTP username
-$mail->Password = 'kreativstreet';                       // SMTP password
-$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465;// TCP port to connect to
+$mail->Username = 'contact@desiattacompany.com';                 // SMTP username
+$mail->Password = 'qazplmq1w2e3r4';                       // SMTP password
+//$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 587;// TCP port to connect to
 $mail->IsHTML(true);
-$mail->setFrom('desiattacompany@gmail.com', 'DAC');
+$mail->setFrom('contact@desiattacompany.com', 'DAC');
 //$mail->addAddress('ellen@example.com');               // Name is optional
-$mail->addReplyTo('desiattacompany@gmail.com', 'noreply');
+$mail->addReplyTo('contact@desiattacompany.com', 'noreply');
 
 
 // $mail->addAddress($email, $name);     // Add a recipient
@@ -46,7 +46,7 @@ $mail->addAddress($emailadmin);     // Add a recipient
 $mail->Subject = $subject;
 $mail->Body    = $message;
 
- $mail->SMTPDebug = 1; 
+// $mail->SMTPDebug = 1; 
 
 
 
@@ -60,8 +60,9 @@ if($mail->send())
 
 } else {
    
-   echo  $mail1->ErrorInfo;
-      // echo "";
-     // header("location: ../contact.php?msg='<p class='error'>Some error occurred!</p>'");
+//    echo  $mail1->ErrorInfo;
+//       echo "";
+      header("location: ../contact.php?msg='<p class='error'>Some error occurred!</p>'");
 
       }
+?>
