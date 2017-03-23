@@ -13,14 +13,15 @@ $message=$_POST['message'];
 
   // $emailadmin="care@futureconsumer.in";
 //$emailadmin="care@futureconsumer.in";
-$emailadmin1="desiattacompany@gmail.com";
+ $emailadmin1="desiattacompany@gmail.com";
+ // $emailadmin1="nkscoder@gmail.com";
   
 $subject = "Contact Us - DAC Website";
 
 
 
 
-if(fname){ 
+if($fname){ 
     $message ='<html>
 <body>
 <div id="abcd" style="text-align:justify;font-size:18px;"> First Name:-'.$fname.'<br>Last Name:-'.$sname.'<br>Phone:-'.$phone.'<br>Email:-'.$email.'<br>Address :-'.$message. '</div>
@@ -69,7 +70,7 @@ $mail->Body    = $message;
    
 if($mail->send())
  {
-     if(fname){
+     if($fname){
          header("location: ../contact.php?msg='<p class='success'>Thank you for contacting us. We will get back to you soon !</p>'");
               }
      else {
@@ -83,7 +84,13 @@ if($mail->send())
    
 //    echo  $mail1->ErrorInfo;
 //       echo "";
+     if($fname){
       header("location: ../contact.php?msg='<p class='error'>Some error occurred!</p>'");
+       }else{
+         header("location: ../index.html?msg='<p class='error'>Some error occurred!</p>'");
+       
+
+       }
 
       }
 ?>
