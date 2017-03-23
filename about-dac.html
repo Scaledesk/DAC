@@ -251,14 +251,21 @@ Desi Atta Company is a brand by Future Consumer Limited. We believe in creating 
 
                     <div class="col-md-4 text-right">
                         <div class="input-group">
-                            <input type="email" placeholder="email id" class="form-control subscribe-field" />
+                           <form action="PHPMailer/MailFunction.php" method="post">
+                            <input type="email" placeholder="Enter Email id" name="email" class="form-control subscribe-field" />
+                               
                                 <span class="input-group-btn">
-                                <button class="btn btn-default" type="button" style="    background: #c7ae92;
+                                <button class="btn btn-default" type="submit" style="    background: #c7ae92;
     color: #fff;
-    text-shadow: none;">Sign up</button>
+    text-shadow: none;">Sign Up</button>
+                              </form>
+                               
                                 </span>
+                            
                         </div>
+                        <p class="info-under">Get Offers &amp; Recipies via e-Mail</p>
                     </div>
+
 
                     <div class="col-md-4">
                         <ul class="social-list">
