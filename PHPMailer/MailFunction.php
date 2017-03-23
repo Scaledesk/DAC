@@ -56,7 +56,7 @@ if($mail->send())
  {
 
    // echo "";
-     header("location: ../contact.php?msg='<p class='success'>Thanks for contacting us. We will contact you DAC!</p>'");
+     header("location: ../contact.php?msg='<p class='success'>Thank you for contacting us. We will get back to you soon !</p>'");
 
 } else {
    

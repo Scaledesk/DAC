@@ -310,6 +310,12 @@ nav ul{
 
 }
 
+.success{
+    border: 2px solid #5c5;
+    text-align: -webkit-center;
+    color: #fff;
+    background: #5c5;
+}
 
 hr{
     border-top: 2px solid #c7ae92;

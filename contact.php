@@ -136,6 +136,12 @@
             <div class="col-md-6">
                 <form action="PHPMailer/MailFunction.php" method="post">
                     <h3>Contact us</h3>
+                    
+                     <?php 
+                         
+                        echo $_REQUEST['msg']; 
+
+                        ?>
 
                     <div class="row">
 
@@ -197,11 +203,7 @@
                         <div class="col-md-12 text-center">
                             <button class="contact-btn" type="submit">Submit</button>
                        
-                        <?php 
-                         
-                        echo $_REQUEST['msg']; 
-
-                        ?>
+                       
                     </div> 
                     </div>
 
