@@ -12,9 +12,10 @@ $message=$_POST['message'];
  // fname sname email phone message
 
   // $emailadmin="care@futureconsumer.in";
-$emailadmin="sanchit2411@gmail.com";
+$emailadmin="care@futureconsumer.in";
+$emailadmin1="desiattacompany@gmail.com";
   
-$subject = "Contact Us - DAC";
+$subject = "Contact Us - DAC Website";
 
 
 
@@ -23,6 +24,15 @@ $message ='<html>
 <div id="abcd" style="text-align:justify;font-size:18px;"> First Name:-'.$fname.'<br>Last Name:-'.$sname.'<br>Phone:-'.$phone.'<br>Email:-'.$email.'<br>Address :-'.$message. '</div>
 </body>
 </html>';
+
+if(!fname){
+    $message ='<html>
+<body>
+<div id="abcd" style="text-align:justify;font-size:18px;"> Email:-'.$email.'</div>
+</body>
+</html>';
+
+}
 
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
@@ -42,6 +52,7 @@ $mail->addReplyTo('contact@desiattacompany.com', 'noreply');
 
 
 $mail->addAddress($emailadmin);     // Add a recipient
+$mail->addAddress($emailadmin1);     // Add a recipient
 
 $mail->Subject = $subject;
 $mail->Body    = $message;
@@ -54,9 +65,15 @@ $mail->Body    = $message;
    
 if($mail->send())
  {
+     if(fname){
+         header("location: ../contact.php?msg='<p class='success'>Thank you for contacting us. We will get back to you soon !</p>'");
+              }
+     else {
+         header("location: ../index.html");
+     }
 
    // echo "";
-     header("location: ../contact.php?msg='<p class='success'>Thank you for contacting us. We will get back to you soon !</p>'");
+     
 
 } else {
    

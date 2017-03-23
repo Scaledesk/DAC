@@ -302,6 +302,17 @@ nav ul{
     
 }
 
+#footer-section p.info-under{
+    border-bottom: 2px solid #c7ae92;
+    text-transform: uppercase;
+    text-align: -webkit-center;
+    color: #fcfcfc;
+    margin-top: 5px;
+} 
+
+#footer-section form{
+    display: inline-flex;
+}
 
 #footer-section .container .social-list li > a{
     color: #fff;
@@ -1042,6 +1053,8 @@ background-color:#f68f8a;
     text-decoration: none;
     color: #e28272;
 }
+
+
 
 
 /*Privacy Policy */
