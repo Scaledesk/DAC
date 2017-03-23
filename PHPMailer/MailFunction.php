@@ -12,20 +12,24 @@ $message=$_POST['message'];
  // fname sname email phone message
 
   // $emailadmin="care@futureconsumer.in";
-$emailadmin="care@futureconsumer.in";
+//$emailadmin="care@futureconsumer.in";
 $emailadmin1="desiattacompany@gmail.com";
   
 $subject = "Contact Us - DAC Website";
 
 
 
-$message ='<html>
+
+if(fname){ 
+    $message ='<html>
 <body>
 <div id="abcd" style="text-align:justify;font-size:18px;"> First Name:-'.$fname.'<br>Last Name:-'.$sname.'<br>Phone:-'.$phone.'<br>Email:-'.$email.'<br>Address :-'.$message. '</div>
 </body>
 </html>';
+         }
 
-if(!fname){
+
+else {
     $message ='<html>
 <body>
 <div id="abcd" style="text-align:justify;font-size:18px;"> Email:-'.$email.'</div>
@@ -51,7 +55,7 @@ $mail->addReplyTo('contact@desiattacompany.com', 'noreply');
 // $mail->addAddress($email, $name);     // Add a recipient
 
 
-$mail->addAddress($emailadmin);     // Add a recipient
+//$mail->addAddress($emailadmin);     // Add a recipient
 $mail->addAddress($emailadmin1);     // Add a recipient
 
 $mail->Subject = $subject;
