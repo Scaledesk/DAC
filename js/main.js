@@ -26,3 +26,7 @@ $('#menu1 , .dropdown-menu').hover(function() {
             $('#fb').css({'position':'static','top':'0px','width':'100%'});
         }
     });
+     $(window).load(function(){
+        $('.filtr-container').filterizr()
+        
+    })
