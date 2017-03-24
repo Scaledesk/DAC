@@ -697,7 +697,7 @@
             self.css('height', containerHeight+1350);
             return posArray;
             }else{
-                self.css('height', containerHeight+1350);
+                self.css('height', containerHeight+90);
             return posArray;
             }
         },

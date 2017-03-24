@@ -1734,3 +1734,10 @@ xcustom form elements
     margin-top: 20px;
 }
 }
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+    color: #555;
+    background: none;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #222 !important;
+}
