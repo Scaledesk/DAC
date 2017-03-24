@@ -563,7 +563,7 @@
             rows = 0,
             //Item data
             itemWidth  = array[0].outerWidth(),
-            itemHeight = 0,
+            itemHeight = self.find('.filtr-item').find('img').outerHeight(),
             //Position calculation vars
             left = 0, top = 0,
             //Loop vars
