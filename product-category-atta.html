@@ -571,11 +571,6 @@
         });
 
     });
-   $(function() {
-            //Initialize filterizr with default options
-                $('.filtr-container').filterizr()
-        
-        });
 
 </script>
 
@@ -584,8 +579,17 @@
 
 
 <script src="js/main.js"></script>
-
-
+<script type="text/javascript">
+    $(document).ready(function(){
+        alert('document')
+    })
+</script>
+<script type="text/javascript">
+    $(window).load(function(){
+        $('.filtr-container').filterizr()
+        alert('window load')
+    })
+</script>
 
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
