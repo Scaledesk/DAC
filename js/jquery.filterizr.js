@@ -303,7 +303,7 @@
         sort: function(attr, sortOrder) {
             var self  = this;
             //Set defaults
-            attr      = attr      || 'domIndex';
+            attr 	  = attr      || 'domIndex';
             sortOrder = sortOrder || 'asc';
 
             //SortingStart callback
@@ -629,7 +629,7 @@
                     });
                     x = left + itemWidth + nextItemWidth;
                     if (x > rowWidth) {
-                        x    = 0;
+                        x 	 = 0;
                         left = 0;
                         top  += array[0].outerHeight();
                         rows++;
@@ -693,8 +693,13 @@
                 containerHeight = rows * array[0].outerHeight();
             }
             //Update the height of .filtr-container based on new positions
-            self.css('height', containerHeight+90);
+            if(array[0].outerHeight() <= 90){
+            self.css('height', containerHeight+1350);
             return posArray;
+            }else{
+                self.css('height', containerHeight+1350);
+            return posArray;
+            }
         },
 
         /**
@@ -880,9 +885,9 @@
         _init: function(index, parent) {
             var self = this, delay = 0;
             //Private item properties
-            self._parent   = parent;              //Ref to parent Filterizr object
+            self._parent   = parent;			  //Ref to parent Filterizr object
             self._category = self._getCategory(); //data-category values
-            self._lastPos  = {};                  //Used for animations
+            self._lastPos  = {};				  //Used for animations
             //Public properties - used for sorting
             self.domIndex = index;
             self.sortData = self.data('sort');
@@ -978,7 +983,7 @@
             //finished filtering in
             else if (self._filteringIn) {
                 self._isFilteredOut = false;
-                self._filteringIn   = false;
+                self._filteringIn 	= false;
             }
             //if animating trigger filteringEnd event once on parent
             if (self._parent._isAnimating) {
