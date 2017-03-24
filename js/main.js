@@ -23,7 +23,7 @@ $('#menu1 , .dropdown-menu').hover(function() {
         if ( scrollVal > headerH ) {
             $('#fb').css({'position':'fixed','top' : potop,'background-color':'#f68f8a','width':'91.4%'});
         }else if(scrollVal>10){
-             $('.filtr-containe').filterizr()
+             $('.filtr-container').filterizr()
         }else {
             $('#fb').css({'position':'static','top':'0px','width':'100%'});
         }
