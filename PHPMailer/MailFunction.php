@@ -71,10 +71,10 @@ $mail->Body    = $message;
 if($mail->send())
  {
      if($fname){
-         header("location: ../contact.php?msg='<p class='success'>Thank you for contacting us. We will get back to you soon !</p>'");
+         header("location: ../thank-you.html");
               }
      else {
-         header("location: ../index.html");
+         header("location: ../thank-you.html");
      }
 
    // echo "";
