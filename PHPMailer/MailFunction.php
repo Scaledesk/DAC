@@ -84,13 +84,22 @@ if($mail->send())
    
 //    echo  $mail1->ErrorInfo;
 //       echo "";
-     if($fname){
-      header("location: ../contact.php?msg='<p class='error'>Some error occurred!</p>'");
+//     if($fname){
+//      header("location: ../contact.php?msg='<p class='error'>Some error occurred!</p>'");
+//       }else{
+//         header("location: ../index.html?msg='<p class='error'>Some error occurred!</p>'");
+//       
+//
+//       }
+     
+      if($fname){
+      header("location: ../thank-you.html");
        }else{
-         header("location: ../index.html?msg='<p class='error'>Some error occurred!</p>'");
+         header("location: ../thank-you.html");
        
 
        }
+
 
       }
 ?>
