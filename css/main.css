@@ -1760,3 +1760,13 @@ xcustom form elements
     margin-left: 0PX;
 }
 }
+ @media screen and (max-width: 426px){
+
+.item-desc {
+    font-size: 1.4vh;
+    line-height: 9px;
+}
+.filtr-item:hover .pc-hover {
+    opacity: 0 !important;
+}
+}
