@@ -305,7 +305,7 @@ nav ul{
 #footer-section p.info-under{
     border-bottom: 2px solid #c7ae92;
     text-transform: uppercase;
-    text-align: -webkit-center;
+    text-align: left;
     color: #fcfcfc;
     margin-top: 5px;
 } 
