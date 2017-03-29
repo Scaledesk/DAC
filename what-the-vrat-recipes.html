@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Desi Atta </title>
+    <title>Desi Atta - What the Vrat </title>
     <meta name="description" content="">
 
     <meta name="keywords" content="">
@@ -81,7 +81,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand custom-brand visible-xs " href="index.html">
+                <a class="navbar-brand custom-brand " href="index.html">
                     <img src="img/logo.png" alt="" width="80%" class="header-logo">
                 </a>
             </div>
@@ -89,25 +89,26 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="dropdown-toggle" id="menu1" data-toggle="dropdown"><a href="#">Our Products</a></li>
-
+                    <li id="menu1"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Products</a>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                           <li role="presentation"><a role="menuitem" tabindex="-1" href="product-category-atta.html">Single Grain</a></li>
                           <li role="presentation"><a role="menuitem" tabindex="-1" href="product-category-readymix.html">Ready Mix</a></li>
 
                         </ul>
+                        </li>
+
 
                     <li><a href="recipe-display.html">Food Experiments</a></li><li><a href="what-the-vrat-recipes.html">What the Vrat</a></li>
                     <li><a href="about-dac.html">About Us</a></li>
-                    <li class="text-center">
-                        <a class="navbar-brand custom-brand p-10 visible-lg visible-md visible-sm " href="index.html">
+                   <!--  <li class="text-center">
+                        <a class="navbar-brand custom-brand p-10 visible-lg visible-md visible-sm " href="#">
                             <img src="img/logo.png" alt="" width="80%" class="header-logo">
                         </a>
-                    </li>
-                    
+                    </li> -->
+
                     <li><a href="contact.php">Contact Us</a></li>
                     <li><a href="#" style="padding-right: 0">Store Locator</a><span style="position:absolute;top:60%;left:20%;font-size:12px;">(Coming Soon)</span></li>
-                    
+                        <!--                    <li><a href="#">|&nbsp;<i class="fa fa-search" style="color: #999"></i>&nbsp;&nbsp;Search</a></li>-->
 
 
                 </ul>
@@ -115,127 +116,130 @@
         </div><!-- /.container-fluid -->
     </nav>
 </div>
-
-
-
-<!--///////////////////////////////////////////////////////////////////////////////////////////
-                                 Contact us Section
+                                <!--///////////////////////////////////////////////////////////////////////////////////////////
+                                 Slider Section
 //////////////////////////////////////////////////////////////////////////////////////////-->
+<div class="wrap">
 
-<section id="contact-us-section">
-    <div class="container">
-        <div class="row">
-            <div class="contact-banner">
-                <!--<h1 class="text-center">For Any Queries Write us at example@examole.com</h1>-->
+    <section id="slider-section" class="container slider-sec">
+        <div class="slider">
+            <div><img src="img/home-banner/vrat=page-1200-250.png" alt="" width="100%"></div>
+            <!--<div><img src="img/SLIDER2.jpg" alt="" width="100%"></div>-->
+            <!--        <div><img src="img/home-banner/Homepage-banner2-2.jpg" alt="" width="100%"></div>-->
+
+        </div>
+
+        <!--<div class="owl-carousel owl-theme">-->
+        <!--<div class="item">-->
+        <!--<img src="img/SLIDER1.jpg" alt="">-->
+        <!--</div>-->
+
+        <!--<div class="item">-->
+        <!--<img src="img/SLIDER2.jpg" alt="">-->
+
+        <!--</div>-->
+
+
+        <!--</div>-->
+
+    </section>
+
+
+
+    <!--///////////////////////////////////////////////////////////////////////////////////////////
+                                     Product Display1
+    //////////////////////////////////////////////////////////////////////////////////////////-->
+    <section class="p-t-5">
+
+        <div class="container">
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="filter-bar" id="fb">
+                        <!-- A basic setup of simple mode filter controls, all you have to do is use data-filter="all"
+                        for an unfiltered gallery and then the values of your categories to filter between them -->
+                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 ">
+
+                            <ul class="simplefilter">
+                                <span> Discover Recipes </span>
+                                <li class="active" data-filter="all">All</li>
+                                <li data-filter="1">New</li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="col-md-4 search-row pull-right hidden">
+                              <span class="pull-right">
+                                <input type="text" class="filtr-search" placeholder="Search here..." name="filtr-search" data-search>
+                                </span>
+                        </div>
+
+                    </div>
+                </div> </div>
+
+
+
+
+            <div class="row">
+                <!-- This is the set up of a basic gallery, your items must have the categories they belong to in a data-category
+                attribute, which starts from the value 1 and goes up from there -->
+                <div class="filtr-container">
+                    <div class="col-md-6 filtr-item" data-category="1" data-sort="Busy streets">
+                        <img class="img-responsive" src="img/samose.png" alt="sample image">
+                        <span class="item-desc">Samosa with Singhara Atta</span>
+                        <a href="whatthevrat/samosa-recipe-singhara-atta.html">
+                            <div class="pc-hover">
+                            <h3>Way to(o) Fast</h3>
+                            <h3>Vrat wale Samose !</h3>
+                            
+                           
+                            </div>
+                        </a>
+                    </div>
+
+
+<!--
+                    <div class="col-md-6 filtr-item" data-category="1" data-sort="City wonders">
+                        <img class="img-responsive" src="img/products/recipe/RAGI-ATTA-HALWA.jpg" alt="sample image">
+                        <span class="item-desc">  Ragi Atta Halwa </span>
+                        <a href="recipe-description-ragi-halwa.html">
+                            <div class="pc-hover">
+                            <h3>Hunger Extinguishers</h3>
+                            
+                           
+                            </div>
+                        </a>
+                    </div>
+-->
+
+
+<!--
+                    <div class="col-md-6 filtr-item" data-category="2" data-sort="In production">
+                        <img class="img-responsive" src="img/products/recipe/AMARNATH-ROLLS.jpg" alt="sample image">
+                        <span class="item-desc">  Amaranth Rolls </span>
+                        <a href="recipe-description-amaranth-rolls.html">
+                            <div class="pc-hover"><h3>That's How We Roll</h3>
+                           
+                            </div>
+                        </a>
+                    </div>
+-->
+
+
+
+
+                </div>
             </div>
+
         </div>
 
 
-
-        <div class="row contact-bg">
-            <div class="col-md-6">
-                <form action="PHPMailer/MailFunction.php" method="post">
-                    <h3>Contact us</h3>
-
-                    <div class="row">
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-<!--                                <label for="First name">First Name</label>-->
-                                <input type="text" class="form-control" name="fname" required placeholder="First Name" />
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-<!--                                <label for="Last name">Last Name</label>-->
-                                <input type="text" class="form-control" required name="sname" placeholder="Last Name" />
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col-md-12">
-                            <div class="form-group">
-<!--                                <label for="Email">Email</label>-->
-                                <input type="email" class="form-control" name="email" required placeholder="Email" />
-                            </div>
-                        </div>
+    </section>
 
 
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col-md-12">
-                            <div class="form-group"> 
-<!--                                <label for="Phone Number">Phone Number</label>-->
-                                <input type="Number" required name="phone" class="form-control" placeholder="Phone Number" />
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-                    <div class="row">
-
-                        <div class="col-md-12">
-                            <div class="form-group">
-<!--                                <label for="message">Message</label>-->
-                                <textarea  cols="10" rows="3" name="message" class="form-control" placeholder="Write Your Message"></textarea>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <button class="contact-btn" type="submit">Submit</button>
-                        </div>
-                        <?php 
-                         
-                        echo $msg; 
-
-                        ?>
-                    </div> 
-
-
-
-                </form>
-
-            </div>
-            
-            
-            <div class="col-md-6 contact-info">
-               <p>For trade enquiries, feedback / complaint , please write to our Customer Care Manager</p> <br>
-<p><i class="fa fa-envelope"></i> &nbsp;Email &nbsp;: <a href="mailto:care@futureconsumer.in">care@futureconsumer.in </a></p><br>
-<p><i class="fa fa-phone"></i> &nbsp; Toll free number&nbsp;:&nbsp;<a href="tel:18002100060">1800 210 0060</a>  </p>
-                
-            </div>
-        </div>
-        
-
-    </div>
-
-</section>
-
-
-
-
-
-
-
-
-<!--///////////////////////////////////////////////////////////////////////////////////////////
-                                 Footer
-//////////////////////////////////////////////////////////////////////////////////////////-->
-
-<section id="footer-section">
+    <section id="footer-section">
     <footer>
         <div class="container">
             <div class="row">
@@ -295,84 +299,21 @@
 
                     <div class="col-md-4 text-right">
                         <div class="input-group">
-                            <input type="email" placeholder="email id" class="form-control subscribe-field" />
+                           <form action="PHPMailer/MailFunction.php" method="post">
+                            <input type="email" placeholder="Enter Email id" name="email" class="form-control subscribe-field" />
+                               
                                 <span class="input-group-btn">
-                                <button class="btn btn-default" type="button" style="    background: #c7ae92;
+                                <button class="btn btn-default" type="submit" style="    background: #c7ae92;
     color: #fff;
-    text-shadow: none;">Sign up</button>
+    text-shadow: none;">Sign Up</button>
+                              </form>
+                               
                                 </span>
+                            
                         </div>
+                        <p class="info-under">Get Offers &amp; RECIPES via e-Mail</p>
                     </div>
 
-                    <div class="col-md-4">
-                        <section id="footer-section">
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center">
-                    <img src="img/footer-logo.png" alt="">
-                    <p>At Desi Atta Company, our primary aim is to offer convenient products to our customers while never compromising on quality. We ensure that only the finest ingredients are used in making our products so as to offer the tastiest and healthiest products to our consumers. We are firmly committed to being a
-                        catalyst of positive change in the life of every family member.</p>
-
-                </div>
-
-                <div class="col-md-6">
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="text-right footer-links">
-                                <p><a href="product-category-atta.html">Single Grain</a></p>
-                                <p><a href="product-category-readymix.html">Ready Mix</a></p>
-                                <p><a href="recipe-display.html">Recipes</a></p>
-                                <p><a href="">Blog</a></p>
-                                <p><a href="">Store Locator</a></p>
-                                
-
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="text-right footer-links">
-                               <p><a href="about-dac.html">About</a></p>
-                               <p><a href="contact.php">Contact</a></p>
-                                <p><a href="terms-and-conditions.html">T&amp;C</a></p>
-                                <p><a href="terms-and-conditions.html">Privacy Policy</a></p>
-                                <p><a href="#">Future Group</a></p>
-                                
-                                
-                                
-
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-
-                </div>
-
-
-            </div>
-
-            <hr>
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-4">
-                        <p>Designed with <i class="fa fa-heart"></i> at KreativStreet</p>
-                    </div>
-
-
-                    <div class="col-md-4 text-right">
-                        <div class="input-group">
-                            <input type="email" placeholder="email id" class="form-control subscribe-field" />
-                                <span class="input-group-btn">
-                                <button class="btn btn-default" type="button" style="    background: #c7ae92;
-    color: #fff;
-    text-shadow: none;">Sign up</button>
-                                </span>
-                        </div>
-                    </div>
 
                     <div class="col-md-4">
                         <ul class="social-list">
@@ -381,6 +322,8 @@
                             <li><a target="_blank" href="https://twitter.com/desiattacompany"><i class="fa fa-twitter"></i></a></li>
                             
                             <li><a target="_blank" href="https://www.instagram.com/desiattacompany/"><i class="fa fa-instagram"></i></a></li>
+                            
+                            <li><a target="_blank" href="https://www.youtube.com/channel/UCTpey4eiAsn1sYi4pGLGzag"><i class="fa fa-youtube"></i></a></li>
                             
                             <li><a target="_blank" href="https://www.facebook.com/DesiAttaCompany"><i class="fa fa-facebook"></i></a></li>
                         </ul>
@@ -394,31 +337,20 @@
         </div>
     </footer>
 </section>
-                    </div>
 
-                </div>
-
-            </div>
-
-
-        </div>
-    </footer>
-</section>
-
-
-
+</div>
 
 
 <script src="https://use.fontawesome.com/d4bfffe885.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery-1.11.2.min.js"></script>
 <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>-->
 
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-
+<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+ -->
 <!-- <script src="js/vendor/isotope.min.js"></script>-->
 
 <!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>-->
@@ -427,11 +359,6 @@
 
 <script>
     $(document).ready(function(){
-
-        $(function() {
-            //Initialize filterizr with default options
-            $('.filtr-container').filterizr();
-        });
 
         $(function() {
             //Simple filter controls
@@ -457,14 +384,18 @@
 
         $("div#fb").click(function(){
 //            alert(123);
-            event.preventDefault();
+//             event.preventDefault();
 //        $('html,body').animate({scrollTop:0}, 'slow') ;
             $('html,body').animate({scrollTop:$('#fb').offset().top - 95}, 'slow') ;
             return false;
         });
 
     });
-
+   $(function() {
+            //Initialize filterizr with default options
+                $('.filtr-container').filterizr()
+        
+        });
 
 </script>
 
@@ -491,17 +422,17 @@
 
 
 <script>
-    $(document).ready(function(){
-        $('.slider').slick({
-            dots: false,
-            infinite: true,
-            speed: 600,
-            fade: true,
-            cssEase: 'linear',
-            autoplay: true
+    // $(document).ready(function(){
+    //     $('.slider').slick({
+    //         dots: false,
+    //         infinite: true,
+    //         speed: 600,
+    //         fade: true,
+    //         cssEase: 'linear',
+    //         autoplay: true
 
-        });
-    });
+    //     });
+    // });
 
 
 

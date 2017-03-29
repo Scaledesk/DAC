@@ -32,7 +32,7 @@ body{
     
     
     #slider-section{
- /*  margin-top: 25px;*/
+   margin-top: 25px;
 }
 
 }
@@ -56,7 +56,7 @@ body{
 
 
 .nav{
-    padding-left:4.6%;
+    padding-left:0px;
 }
 
 
@@ -659,7 +659,7 @@ select {
     width: 100%;
 }
 .filtr-container {
-    padding-top: 60px !important;
+    padding-top: 10px !important;
 }
 .simplefilter{
     padding-left: 10px;
@@ -1747,7 +1747,7 @@ xcustom form elements
     margin-left: 100PX;
 }
 .nav>li {
-    padding: 0px 10px;
+/*    padding: 0px 10px;*/
 }
 }
 @media (max-width:1024px){
