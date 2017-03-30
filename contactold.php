@@ -267,7 +267,7 @@
                                <p><a href="contact.php">Contact</a></p>
                                 <p><a href="terms-and-conditions.html">T&amp;C</a></p>
                                 <p><a href="terms-and-conditions.html">Privacy Policy</a></p>
-                                <p><a href="#">Future Group</a></p>
+                                <p><a href="http://www.futuregroup.in/">Future Group</a></p>
                                 
                                 
                                 
@@ -337,7 +337,7 @@
                                <p><a href="contact.php">Contact</a></p>
                                 <p><a href="terms-and-conditions.html">T&amp;C</a></p>
                                 <p><a href="terms-and-conditions.html">Privacy Policy</a></p>
-                                <p><a href="#">Future Group</a></p>
+                                <p><a href="http://www.futuregroup.in/">Future Group</a></p>
                                 
                                 
                                 
