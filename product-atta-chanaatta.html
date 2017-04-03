@@ -11,7 +11,7 @@
 
     <meta name="keywords" content="">
 
-    <meta name="robots" content="noindex,nofollow">
+    <meta name="robots" content="index,follow">
 
     <meta name="author" content="Desi Atta">
 
