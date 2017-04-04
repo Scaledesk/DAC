@@ -297,7 +297,7 @@
                     
                     <div class="col-md-6 filtr-item" data-category="2" data-sort="In production">
                         <img class="img-responsive" src="img/KADHI-RECIPE.png" alt="sample image">
-                        <span class="item-desc">Kadhi with Kuttu Atta</span>
+                        <span class="item-desc">Kadh    i with Kuttu Atta</span>
                         <a href="whatthevrat/vrat-wali-kadhi-with-kuttu-atta.html">
                             <div class="pc-hover"><h3>Start Kadhi-ing</h3>
                            
@@ -314,6 +314,12 @@
 
 
     </section>
+    
+   <section>
+       
+       <div id="instafeed"></div> 
+       
+       </section>
 
 
     <section id="footer-section">
@@ -556,6 +562,17 @@
 
 </script>
 
+    
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
+    
+    <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'awesome',
+        clientId: 'cecba4f4dd5c4857b1d7f8c98c37d642'
+    });
+    feed.run();
+</script>
 
 
 </body>
