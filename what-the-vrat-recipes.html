@@ -317,7 +317,7 @@
     
    <section>
        
-       <div id="instafeed"></div> 
+       <ul class="spec"></ul>
        
        </section>
 
@@ -561,17 +561,25 @@
   ga('send', 'pageview');
 
 </script>
+    
+<!--    Access toek : 178953089.cecba4f.f875e30ef88f4c9ca9dca027cf3637ea-->
 
     
-    <script type="text/javascript" src="js/instafeed.min.js"></script>
+    <script type="text/javascript" src="js/jquery-spectragram-1.0.3/spectragram.js"></script>
     
     <script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'awesome',
-        clientId: 'cecba4f4dd5c4857b1d7f8c98c37d642'
-    });
-    feed.run();
+        
+        $(document).ready(function(){
+    jQuery.fn.spectragram.accessData = {
+    accessToken: '178953089.cecba4f.f875e30ef88f4c9ca9dca027cf3637ea',
+    clientID: 'cecba4f4dd5c4857b1d7f8c98c37d642'
+};
+        
+        $('ul.spec').spectragram('getUserFeed',{
+    query: 'sanchit_nomad'
+});
+        
+            });
 </script>
 
 
