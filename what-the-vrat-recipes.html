@@ -317,7 +317,7 @@
     
    <section>
        
-       <ul class="spec"></ul>
+       <div class="spec"></div>
        
        </section>
 
@@ -426,7 +426,7 @@
 
 <script src="https://use.fontawesome.com/d4bfffe885.js"></script>
 
-<script src="js/jquery-1.11.2.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>-->
 
 <script src="js/vendor/bootstrap.min.js"></script>
@@ -575,8 +575,11 @@
     clientID: 'cecba4f4dd5c4857b1d7f8c98c37d642'
 };
         
-        $('ul.spec').spectragram('getUserFeed',{
-    query: 'sanchit_nomad'
+        $('div.spec').spectragram('getUserFeed',{
+    query: 'sanchit_nomad',
+            max: 5,
+	size: 'big',
+	complete: alert('Done!');
 });
         
             });
