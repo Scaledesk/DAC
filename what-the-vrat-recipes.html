@@ -570,19 +570,22 @@
     <script type="text/javascript">
         
         $(document).ready(function(){
+            alert("boom");
     jQuery.fn.spectragram.accessData = {
     accessToken: '178953089.cecba4f.f875e30ef88f4c9ca9dca027cf3637ea',
     clientID: 'cecba4f4dd5c4857b1d7f8c98c37d642'
 };
         
+            alert("boom2");
         $('div.spec').spectragram('getUserFeed',{
     query: 'sanchit_nomad',
             max: 5,
 	size: 'big',
-	complete: alert('Done!');
+	complete: alert('Done!')
 });
-        
+                                                              
             });
+        
 </script>
 
 
